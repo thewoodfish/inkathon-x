@@ -117,12 +117,13 @@ export const ElectionContractInteractions: FC = () => {
   return (
     <>
       <div className="flex  grow flex-col gap-4">
-        <h2 className="text-center font-mono text-gray-400">Election Smart Contract</h2>
+        <h2 className="text-center font-mono text-gray-400">Interact with the election smart contract</h2>
 
         <Form {...form}>
           <Card>
             <CardContent className="pt-6">
               <div className='mb-5'>Here are the list of people contesting in the election:</div>
+              <hr className='mb-3'></hr>
               {fetchIsLoading || !contract ? (
                 'Loading…'
               ) : (

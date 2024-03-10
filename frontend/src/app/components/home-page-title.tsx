@@ -5,7 +5,7 @@ import { AnchorHTMLAttributes, FC } from 'react'
 import githubIcon from 'public/icons/github-button.svg'
 import telegramIcon from 'public/icons/telegram-button.svg'
 import vercelIcon from 'public/icons/vercel-button.svg'
-import inkathonLogo from 'public/images/inkathon-logo.png'
+import wakandaLogo from 'public/images/wakanda.jpeg'
 
 import { cn } from '@/utils/cn'
 
@@ -41,7 +41,7 @@ export const HomePageTitle: FC = () => {
           // className="group"
           className="group flex cursor-pointer items-center gap-4 rounded-3xl px-3.5 py-1.5 transition-all hover:bg-gray-900"
         >
-          <Image src={inkathonLogo} priority width={60} alt="ink!athon Logo" />
+          <Image src={wakandaLogo} priority width={60} alt="ink!athon Logo" />
           <h1 className="text-[2.5rem] font-black tracking-tighter">{title}</h1>
         </Link>
 
