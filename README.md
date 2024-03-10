@@ -1,4 +1,4 @@
-## Wakanda Kingship Election
+## Wakanda General Election
 <img src="https://github.com/thewoodfish/inkathon-x/blob/main/frontend/public/images/screen.png">
 
 Alas, the greatest nation on earth is having her general election! I have been tasked to build a simple, transparent and elegant system for the election process. 
