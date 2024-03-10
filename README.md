@@ -40,11 +40,11 @@ I ran `pnpm run build` to build my contract and to put its important meta files 
 ### Setting chain to local
 In the `env.local` file in the `frontend` folder, i changed the setting to local i.e `NEXT_PUBLIC_DEFAULT_CHAIN=development`
 
-### The Front-end
+### The front end
 The front end contains React and typescript codes and style. I was able to load my contract metadata into the front end and send messages to the contract. Because it's react, i was able query the number of votes immediately after a vote was cast.
 It was really easy. So much boilerplate!
 
 ### More information
-I also read and followed the [ink!athon](https://github.com/scio-labs/inkathon) ReadMe documentation. I highly recomment it!
+I also read and followed the [ink!athon](https://github.com/scio-labs/inkathon) ReadMe documentation. I highly recommend it!
 
 I wish us the best on our ink!athon journey.
