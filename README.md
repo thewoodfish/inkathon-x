@@ -27,7 +27,9 @@ The contract storage contains the simple data values that is the core of the ent
     }
 ```
 
-#### The contract function
-- `new`: This is constructor function that initializes the contract storage. Because we're handling only the Wakanda election, i hardcoded some values and seeded the contract storage with data. The initial data contains the three aspirants, their political parties and their initial votes are set to 0.
-- `vote`: This function allows the caller of the contract function to participate in the eleciton and make a vote. Double-voting is prevented by default.
+#### The contract functions
+- `new`: This is the constructor function that initializes the contract storage. Because we're handling only the Wakanda election, i hardcoded some values and seeded the contract storage with data. The initial data contains the three aspirants and their political parties with their initial votes are set to 0.
+
+- `vote`: This function allows the caller  to participate in the eleciton and make a vote. Double-voting is prevented by default.
+
 - `votes`: This function returns the various candidates and the number of votes they have gotten at the time of query.
