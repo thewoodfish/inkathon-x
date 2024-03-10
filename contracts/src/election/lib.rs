@@ -21,6 +21,20 @@ mod election {
         political_party: String,
     }
 
+    /// Election's error type.
+    #[derive(scale::Decode, scale::Encode, Clone)]
+    #[cfg_attr(
+        feature = "std",
+        derive(scale_info::TypeInfo, ink::storage::traits::StorageLayout)
+    )]
+    pub enum Error {
+        /// Attempting to vote more than once
+        CannotDoubleVote,
+    }
+
+    /// Election result type.
+    pub type Result<T> = core::result::Result<T, Error>;
+
     /// Defines the storage of your contract.
     #[ink(storage)]
     pub struct Election {
@@ -73,7 +87,7 @@ mod election {
 
         /// vote for a candidate
         #[ink(message, payable)]
-        pub fn vote(&mut self, name: String) {
+        pub fn vote(&mut self, name: String) -> Result<()> {
             // Get the contract caller
             let caller = Self::env().caller();
 
@@ -87,6 +101,11 @@ mod election {
 
                 // append to voters vec to prevent double-voting
                 self.voters.push(caller);
+
+                Ok(())
+            } else {
+                // double voting attempt
+                Err(Error::CannotDoubleVote)
             }
         }
 

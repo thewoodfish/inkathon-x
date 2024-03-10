@@ -12,3 +12,7 @@ export enum LangError {
 	couldNotReadInput = 'CouldNotReadInput'
 }
 
+export enum Error {
+	cannotDoubleVote = 'CannotDoubleVote'
+}
+
