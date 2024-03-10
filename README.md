@@ -7,3 +7,7 @@ That is where ink! and ink!athon comes in. This project was built using and cust
 2. The [Start building full-stack dApps with ink!athon](https://www.youtube.com/watch?v=DA1pLk5--GE) tutorial by AlephZero.
 
 These were very helpful guides.
+
+Below i will highlight some specifics that stood out to me:
+
+#### The election contract
