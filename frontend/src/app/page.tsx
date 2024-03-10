@@ -8,7 +8,7 @@ import { toast } from 'react-hot-toast'
 import { HomePageTitle } from '@/app/components/home-page-title'
 import { ChainInfo } from '@/components/web3/chain-info'
 import { ConnectButton } from '@/components/web3/connect-button'
-import { GreeterContractInteractions } from '@/components/web3/greeter-contract-interactions'
+import { ElectionContractInteractions } from '@/components/web3/election-contract-interactions'
 
 export default function HomePage() {
   // Display `useInkathon` error messages (optional)
@@ -27,12 +27,13 @@ export default function HomePage() {
         {/* Connect Wallet Button */}
         <ConnectButton />
 
-        <div className="mt-12 flex w-full flex-wrap items-start justify-center gap-4">
+        <div className="mt-12 ">
+          {/* Election Read/Write Contract Interactions */}
+          <ElectionContractInteractions />
+
+          <div className='pb-[70px]'></div>
           {/* Chain Metadata Information */}
           <ChainInfo />
-
-          {/* Greeter Read/Write Contract Interactions */}
-          <GreeterContractInteractions />
         </div>
       </div>
     </>
