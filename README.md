@@ -13,7 +13,7 @@ Below i will highlight some specifics that stood out to me:
 The election contract in the `contracts` folder contains the `rust` code for the smart contract. Below is a breif description of the contract and how it works:
 
 #### The contract storage
-The contract storage contains the simple data values that help the election process.
+The contract storage contains the simple data values that is the core of the entire election process.
 ```rust
     /// Defines the storage of your contract.
     #[ink(storage)]
